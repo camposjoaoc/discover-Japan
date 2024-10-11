@@ -1,0 +1,37 @@
+@use "fonts";
+@import "navbar";
+@import "footer";
+
+body {
+    background-color: fonts.$secondary-color;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.main-title,
+.main-info {
+    color: fonts.$main-color;
+    font-family: fonts.$secondary-font;
+
+    &.main-title {
+        font-size: 5.25rem;
+        font-weight: 600;
+        line-height: 6.38rem;
+        margin: 10px;
+    }
+    &.main-info {
+        font-size: 1.38rem;
+        width: 40vw;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px;
+    }
+}
