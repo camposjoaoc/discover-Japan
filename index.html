@@ -4,28 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles and Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Japan</title>
+    <script src="./scripts/navbar-script-menu.js" defer></script>
+    <!--FAV ico and PageTitle-->
+    <link rel="icon" type="image/png" href="../img/img-fav-icon.png">
+    <title>Head.</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-left">
-                <a href="../index.html" class="navbar-title">Head.</a>
+            <div class="navbar-title">Head.</div>
+            <ul class="nav-links-desktop">
+                <li><a href="#Works">Works</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="close" id="closeButton">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="nav-links-mobile">
+                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
+                </ul>
+
             </div>
-            <div class="navbar-right">
-                <a href="#Works">Works</a>
-                <a href="#Services">Services</a>
-                <a href="#Contacts">Contacts</a>
-            </div>
+            <button class="hamburger" id="hamburgerButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
     <main>
@@ -38,10 +55,10 @@
                     eleifend lacus, vitae
                     ullamcor.</p>
             </div>
-            <div><img src="./img/img-desktop-fuji.png" alt="Mount Fuji"></div>
+            <div class="img-resolution"></div>
         </section>
     </main>
-    <footer></footer>
+
 </body>
 
 </html>
