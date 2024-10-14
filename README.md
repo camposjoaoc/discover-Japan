@@ -1,0 +1,1 @@
+![Head. web page](./img/img-design-devices.pngng)
