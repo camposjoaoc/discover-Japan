@@ -1,1 +1,1 @@
-![Head. web page](./img/img-design-devices.pngng)
+![Head. web page](./img/img-design-devices.png)
