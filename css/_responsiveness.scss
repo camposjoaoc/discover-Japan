@@ -1,0 +1,41 @@
+/*Responsiveness for Desktop, Tablet and Mobile*/
+.img-resolution {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 1025px) {
+    .img-resolution {
+        height: 60vh;
+        background-image: url("../img/img-desktop-fuji.png");
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .img-resolution {
+        height: 50vh;
+        background-image: url("../img/img-tablet-fuji.png");
+    }
+    .main-title {
+        font-size: 4.5rem !important;
+    }
+    .main-info {
+        font-size: 1.38rem !important;
+        width: 60vw !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-resolution {
+        height: 40vh;
+        background-image: url("../img/img-mobile-fuji.png");
+    }
+    .main-title {
+        font-size: 3.25rem !important;
+    }
+    .main-info {
+        font-size: 0.75rem !important;
+        width: 60vw !important;
+    }
+}

@@ -1,6 +1,7 @@
 @use "fonts";
 @import "navbar";
 @import "footer";
+@import "responsiveness";
 
 body {
     background-color: fonts.$secondary-color;
