@@ -21,58 +21,83 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-title">Head.</div>
-            <ul class="nav-links-desktop">
-                <li><a href="#Works">Works</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-            </ul>
-            <div class="mobile-menu" id="mobileMenu">
-                <button class="close" id="closeButton">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <ul class="nav-links-mobile">
-                    <li><a href="#Works">Works</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Contacts">Contacts</a></li>
+
+    <body>
+        <!-- Header section starts here -->
+        <header>
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Website title that redirects to the homepage when clicked -->
+                <div class="navbar-title" onclick="window.location.href='../index.html'">Head.</div>
+
+                <!-- Desktop navigation links -->
+                <ul class="nav-links-desktop">
+                    <li><a href="./pages/works.html">Works</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/contacts.html">Contacts</a></li>
                 </ul>
 
+                <!-- Mobile menu for smaller screens -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <!-- Close button for the mobile menu -->
+                    <button class="close" id="closeButton">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <!-- Mobile navigation links -->
+                    <ul class="nav-links-mobile">
+                        <li><a href="./pages/works.html">Works</a></li>
+                        <li><a href="./pages/services.html">Services</a></li>
+                        <li><a href="./pages/contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger button to open the mobile menu -->
+                <button class="hamburger" id="hamburgerButton">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main content section starts here -->
+        <main>
+            <section class="container">
+                <!-- Main title with animation -->
+                <div>
+                    <h1 class="main-title animate__animated animate__fadeIn">Japan</h1>
+                </div>
+
+                <!-- Main paragraph with brief information -->
+                <div>
+                    <p class="main-info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra
+                        eleifend lacus, vitae ullamcor.</p>
+                </div>
+
+                <!-- Placeholder for an image -->
+                <div class="img-resolution"></div>
+            </section>
+        </main>
+
+        <!-- Footer section starts here -->
+        <footer>
+            <div class="footer-content">
+                <!-- Copyright notice -->
+                <p>&copy; 2024 Head. All rights reserved.</p>
+
+                <!-- Social media icons with links to platforms -->
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-            <button class="hamburger" id="hamburgerButton">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-    <main>
-        <section class="container">
-            <div>
-                <h1 class="main-title animate__animated animate__fadeIn">Japan</h1>
-            </div>
-            <div>
-                <p class="main-info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra
-                    eleifend lacus, vitae
-                    ullamcor.</p>
-            </div>
-            <div class="img-resolution"></div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Head. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
-                        class="fa-brands fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+
 
 </html>

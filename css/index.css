@@ -32,6 +32,7 @@
   line-height: 36px;
   text-decoration: none; /* Removes underline */
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* Desktop navigation links: horizontal layout with no list styling */

@@ -19,6 +19,7 @@
     line-height: 36px;
     text-decoration: none; /* Removes underline */
     color: fonts.$main-color;
+    cursor: pointer;
 }
 
 /* Desktop navigation links: horizontal layout with no list styling */
@@ -60,7 +61,6 @@
     align-items: center; /* Center align items */
     font-size: 1.45rem; /* Font size for mobile links */
     z-index: 5; /* Layer above other content */
-
 }
 
 /* Mobile navigation links: centered vertically, styled list */
