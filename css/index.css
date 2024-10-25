@@ -1,4 +1,13 @@
-/* Navbar Styles for Desktop, Tablet and Mobile*/
+/* Importing necessary modules and styles */
+/* Font and color variables */
+/* Font for logos and headers to create a unique brand style */
+/* Primary font for most content to ensure readability */
+/* Secondary font for additional styling, often used for titles */
+/* Primary color for text or elements that need emphasis (white) */
+/* Secondary color for backgrounds or contrasting areas (black) */
+/* Font styles and variables */
+/* Navbar Styles for Desktop, Tablet, and Mobile */
+/* Navbar container: centers content, aligns items, and provides padding */
 .navbar {
   color: #fff;
   display: -webkit-box;
@@ -6,73 +15,77 @@
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-between; /* Space between title and links */
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin: 20px auto;
-  max-width: 80%;
-  padding: 20px;
+          align-items: center; /* Center items vertically */
+  margin: 20px auto; /* Center navbar with outer margin */
+  max-width: 80%; /* Maximum width for responsive layout */
+  padding: 20px; /* Padding around navbar content */
 }
 
+/* Navbar title: uses logo font, larger size, and main color */
 .navbar-title {
   font-family: "Baloo 2", sans-serif;
   font-size: 1.9rem;
   font-weight: 400;
   line-height: 36px;
-  text-decoration: none;
+  text-decoration: none; /* Removes underline */
   color: #ffffff;
 }
 
+/* Desktop navigation links: horizontal layout with no list styling */
 .nav-links-desktop {
-  list-style: none;
+  list-style: none; /* Removes default list styling */
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; /* Flex layout for horizontal alignment */
 }
 
 .nav-links-desktop li {
-  padding: 0 15px;
+  padding: 0 15px; /* Space between each link */
 }
 
+/* Link styling for both desktop and mobile menus */
 .nav-links-desktop a,
 .nav-links-mobile a {
-  text-decoration: none;
+  text-decoration: none; /* Removes underline */
   -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-family: "Source Sans 3", sans-serif;
+  transition: 0.3s; /* Smooth hover effect */
+  font-family: "Source Sans 3", sans-serif; /* Primary font */
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
-  color: #ffffff;
+  color: #ffffff; /* Main color for links */
 }
 
 .nav-links-desktop a:hover {
-  color: antiquewhite;
+  color: antiquewhite; /* Hover color for desktop links */
 }
 
-/*Styles for mobile devices*/
+/* Mobile menu container: hidden by default, shows on smaller screens */
 .mobile-menu {
   display: none;
-  position: fixed;
+  position: fixed; /* Fixed position for overlay effect */
   top: 0;
   right: 0;
-  width: 60%;
-  height: 100%;
+  width: 60%; /* Width of mobile menu */
+  height: 100%; /* Full height of viewport */
   background-color: #000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: column; /* Vertical layout for links */
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.45rem;
-  z-index: 5;
+          align-items: center; /* Center align items */
+  font-size: 1.45rem; /* Font size for mobile links */
+  z-index: 5; /* Layer above other content */
 }
 
+/* Mobile navigation links: centered vertically, styled list */
 .nav-links-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,133 +93,198 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  gap: 1.2rem;
-  width: 50%;
+          flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text */
+  gap: 1.2rem; /* Space between links */
+  width: 50%; /* Width of link area */
   list-style: none;
   padding: 0;
 }
 
 .nav-links-mobile li {
-  border-bottom: 1px solid #787272;
-  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #787272; /* Separator line between links */
+  padding-bottom: 1.2rem; /* Space below each link */
 }
 
+/* Icon buttons for opening/closing mobile menu */
 .hamburger,
 .close {
-  font-size: 1.5rem;
-  cursor: pointer;
+  font-size: 1.5rem; /* Icon size */
+  cursor: pointer; /* Shows pointer cursor */
   display: none;
   padding: 0;
   background-color: #000;
-  color: #ffffff;
-  border: none;
+  color: #ffffff; /* Main color for icon */
+  border: none; /* Removes border */
 }
 
+/* Close button for mobile menu: positioned in top-right corner */
 .close {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
   margin-top: 20px;
   margin-right: 20px;
-  display: block;
+  display: block; /* Show close button */
 }
 
+/* Utility class for flex display */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+/* Responsive styles for screens up to 768px */
 @media screen and (max-width: 768px) {
   .nav-links-desktop {
-    display: none;
+    display: none; /* Hide desktop links */
   }
   .hamburger {
-    display: block;
+    display: block; /* Show hamburger menu */
     color: none;
   }
 }
-/*Responsiveness for Desktop, Tablet and Mobile*/
-.img-resolution {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (min-width: 1025px) {
-  .img-resolution {
-    height: 60vh;
-    background-image: url("../img/img-desktop-fuji.png");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .img-resolution {
-    height: 50vh;
-    background-image: url("../img/img-tablet-fuji.png");
-  }
-  .main-title {
-    font-size: 4.5rem !important;
-  }
-  .main-info {
-    font-size: 1.38rem !important;
-    width: 60vw !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  .img-resolution {
-    height: 40vh;
-    background-image: url("../img/img-mobile-fuji.png");
-  }
-  .main-title {
-    font-size: 3.25rem !important;
-  }
-  .main-info {
-    font-size: 0.75rem !important;
-    width: 60vw !important;
-  }
-}
-body {
+/* Navbar styles */
+/* Footer styles: dark background, white text, padding for spacing */
+footer {
   background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 1em 0;
 }
 
-.container {
+/* Footer content: flex layout to center items vertically and horizontally */
+.footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+          flex-direction: column; /* Stack items vertically */
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-  margin: 20px auto;
-  max-width: 80%;
+          align-items: center; /* Center items horizontally */
+  text-align: center; /* Center-align text */
 }
 
+/* Copyright text: small margin for separation from icons */
+.footer-content p {
+  margin: 0.5em 0;
+}
+
+/* Social icons container: flex layout for alignment and spacing */
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px; /* Space between icons */
+  margin-top: 0.5em; /* Space above icons */
+}
+
+/* Icon links: white color, larger size, and smooth hover transition */
+.social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/* Hover effect for icons: changes color to light gray */
+.social-icons a:hover {
+  color: #ddd;
+}
+
+/* Footer styles */
+/* Default image container settings */
+.img-resolution {
+  width: 100%; /* Full-width for responsiveness */
+  background-size: cover; /* Image scales to cover the element */
+  background-position: center; /* Centers the image */
+}
+
+/* Desktop styles: large screens (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+  .img-resolution {
+    height: 60vh; /* Set height to 60% of the viewport */
+    background-image: url("../img/img-desktop-fuji.png"); /* Desktop image */
+  }
+}
+/* Tablet styles: medium screens (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .img-resolution {
+    height: 50vh; /* Set height to 50% of the viewport */
+    background-image: url("../img/img-tablet-fuji.png"); /* Tablet image */
+  }
+  .main-title {
+    font-size: 4.5rem !important; /* Smaller title font for tablets */
+  }
+  .main-info {
+    font-size: 1.38rem !important; /* Adjust info text size for tablets */
+    width: 60vw !important; /* Increase text width for readability */
+  }
+}
+/* Mobile styles: small screens (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .img-resolution {
+    height: 40vh; /* Set height to 40% of the viewport */
+    background-image: url("../img/img-mobile-fuji.png"); /* Mobile image */
+  }
+  .main-title {
+    font-size: 3.25rem !important; /* Smaller font size for mobile */
+  }
+  .main-info {
+    font-size: 0.75rem !important; /* Smaller info text for mobile */
+    width: 60vw !important; /* Maintain readability with increased width */
+  }
+}
+/* Responsive adjustments */
+/* Body styles: set background color using a variable from fonts module */
+body {
+  background-color: #000000;
+}
+
+/* Container styling: center content, add spacing between elements */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Flex layout for easy alignment */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /* Stack items vertically */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Center items vertically */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between elements */
+  margin: 20px auto; /* Center container with outer margin */
+  max-width: 80%; /* Set maximum width for responsive scaling */
+}
+
+/* Main title and info styling: use custom font and color variables */
 .main-title,
 .main-info {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  color: #ffffff; /* Primary font color */
+  font-family: "Poppins", sans-serif; /* Secondary font family */
+  /* Main title specific styles: large font size, bold weight */
+  /* Main info specific styles: smaller font, centered text */
 }
 .main-title.main-title,
 .main-info.main-title {
-  font-size: 5.25rem;
-  font-weight: 600;
-  line-height: 6.38rem;
-  margin: 10px;
+  font-size: 5.25rem; /* Large font size for main title */
+  font-weight: 600; /* Bold font weight */
+  line-height: 6.38rem; /* Line height for spacing */
+  margin: 10px; /* Outer margin for spacing */
 }
 .main-title.main-info,
 .main-info.main-info {
-  font-size: 1.38rem;
-  width: 40vw;
-  font-weight: 400;
-  text-align: center;
-  margin: 10px;
+  font-size: 1.38rem; /* Medium font size for main info */
+  width: 40vw; /* Set width to 40% of viewport */
+  font-weight: 400; /* Regular font weight */
+  text-align: center; /* Center align text */
+  margin: 10px; /* Outer margin for spacing */
 }

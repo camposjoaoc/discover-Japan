@@ -1,0 +1,39 @@
+/* Footer styles: dark background, white text, padding for spacing */
+footer {
+    background-color: fonts.$secondary-color;
+    font-family: fonts.$secondary-font;
+    color: #fff;
+    padding: 1em 0;
+}
+
+/* Footer content: flex layout to center items vertically and horizontally */
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center-align text */
+}
+
+/* Copyright text: small margin for separation from icons */
+.footer-content p {
+    margin: 0.5em 0;
+}
+
+/* Social icons container: flex layout for alignment and spacing */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    margin-top: 0.5em; /* Space above icons */
+}
+
+/* Icon links: white color, larger size, and smooth hover transition */
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+/* Hover effect for icons: changes color to light gray */
+.social-icons a:hover {
+    color: #ddd;
+}
