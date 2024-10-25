@@ -1,41 +1,44 @@
-/*Responsiveness for Desktop, Tablet and Mobile*/
+/* Default image container settings */
 .img-resolution {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+    width: 100%; /* Full-width for responsiveness */
+    background-size: cover; /* Image scales to cover the element */
+    background-position: center; /* Centers the image */
 }
 
+/* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
     .img-resolution {
-        height: 60vh;
-        background-image: url("../img/img-desktop-fuji.png");
+        height: 60vh; /* Set height to 60% of the viewport */
+        background-image: url("../img/img-desktop-fuji.png"); /* Desktop image */
     }
 }
 
+/* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .img-resolution {
-        height: 50vh;
-        background-image: url("../img/img-tablet-fuji.png");
+        height: 50vh; /* Set height to 50% of the viewport */
+        background-image: url("../img/img-tablet-fuji.png"); /* Tablet image */
     }
     .main-title {
-        font-size: 4.5rem !important;
+        font-size: 4.5rem !important; /* Smaller title font for tablets */
     }
     .main-info {
-        font-size: 1.38rem !important;
-        width: 60vw !important;
+        font-size: 1.38rem !important; /* Adjust info text size for tablets */
+        width: 60vw !important; /* Increase text width for readability */
     }
 }
 
+/* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
     .img-resolution {
-        height: 40vh;
-        background-image: url("../img/img-mobile-fuji.png");
+        height: 40vh; /* Set height to 40% of the viewport */
+        background-image: url("../img/img-mobile-fuji.png"); /* Mobile image */
     }
     .main-title {
-        font-size: 3.25rem !important;
+        font-size: 3.25rem !important; /* Smaller font size for mobile */
     }
     .main-info {
-        font-size: 0.75rem !important;
-        width: 60vw !important;
+        font-size: 0.75rem !important; /* Smaller info text for mobile */
+        width: 60vw !important; /* Maintain readability with increased width */
     }
 }
