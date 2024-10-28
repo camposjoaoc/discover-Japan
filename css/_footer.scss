@@ -25,6 +25,9 @@ footer {
     gap: 15px; /* Space between icons */
     margin-top: 0.5em; /* Space above icons */
 }
+.social-icons a:hover {
+    color: antiquewhite; /* Hover color for footer links */
+}
 
 /* Icon links: white color, larger size, and smooth hover transition */
 .social-icons a {
