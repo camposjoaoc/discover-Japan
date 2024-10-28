@@ -6,40 +6,61 @@
 
 /* Body styles: set background color using a variable from fonts module */
 body {
-    background-color: fonts.$secondary-color;
+  background-color: fonts.$secondary-color;
+  width: 100%;
+  margin: auto;
 }
 
 /* Container styling: center content, add spacing between elements */
 .container {
-    display: flex; /* Flex layout for easy alignment */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 20px; /* Space between elements */
-    margin: 20px auto; /* Center container with outer margin */
-    max-width: 80%; /* Set maximum width for responsive scaling */
+  display: flex; /* Flex layout for easy alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between elements */
+  margin: 20px auto; /* Center container with outer margin */
+  max-width: 80%; /* Set maximum width for responsive scaling */
 }
 
 /* Main title and info styling: use custom font and color variables */
 .main-title,
 .main-info {
-    color: fonts.$main-color; /* Primary font color */
-    font-family: fonts.$secondary-font; /* Secondary font family */
+  color: fonts.$main-color; /* Primary font color */
+  font-family: fonts.$secondary-font; /* Secondary font family */
 
-    /* Main title specific styles: large font size, bold weight */
-    &.main-title {
-        font-size: 5.25rem; /* Large font size for main title */
-        font-weight: 600; /* Bold font weight */
-        line-height: 6.38rem; /* Line height for spacing */
-        margin: 10px; /* Outer margin for spacing */
-    }
+  /* Main title specific styles: large font size, bold weight */
+  &.main-title {
+    font-size: 5.25rem; /* Large font size for main title */
+    font-weight: 600; /* Bold font weight */
+    line-height: 6.38rem; /* Line height for spacing */
+    margin: 10px; /* Outer margin for spacing */
+  }
 
-    /* Main info specific styles: smaller font, centered text */
-    &.main-info {
-        font-size: 1.38rem; /* Medium font size for main info */
-        width: 40vw; /* Set width to 40% of viewport */
-        font-weight: 400; /* Regular font weight */
-        text-align: center; /* Center align text */
-        margin: 10px; /* Outer margin for spacing */
-    }
+  /* Main info specific styles: smaller font, centered text */
+  &.main-info {
+    font-size: 1.38rem; /* Medium font size for main info */
+    width: 40vw; /* Set width to 40% of viewport */
+    font-weight: 400; /* Regular font weight */
+    text-align: center; /* Center align text */
+    margin: 10px; /* Outer margin for spacing */
+  }
+}
+
+/* Styling for links within the .contact-info section */
+.contact-info a {
+  color: antiquewhite; /* Sets link color to antiquewhite */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Hover effect for links within the .contact-info section */
+.contact-info a:hover {
+  text-decoration: underline; /* Adds underline when hovering over the link */
+}
+
+/* Styling for the embedded map */
+.map {
+  width: 100%; /* Ensures the map takes up the full width of its container */
+  min-height: 60vh; /* Sets minimum height of the map to 60% of the viewport height */
+  border: none; /* Removes any border from the iframe */
+  filter: grayscale(100%); /* Applies a grayscale filter to the map */
 }

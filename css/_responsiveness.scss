@@ -5,19 +5,25 @@
     background-position: center; /* Centers the image */
 }
 
+.image{
+    display: none;
+}
+
 /* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
-    .img-resolution {
+    .desktop-screen {
         height: 60vh; /* Set height to 60% of the viewport */
-        background-image: url("../img/img-desktop-fuji.png"); /* Desktop image */
+        display: block;
+        width: 100%;
     }
 }
 
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .img-resolution {
+    .tablet-screen {
         height: 50vh; /* Set height to 50% of the viewport */
-        background-image: url("../img/img-tablet-fuji.png"); /* Tablet image */
+        display: block;
+        width: 100%;
     }
     .main-title {
         font-size: 4.5rem !important; /* Smaller title font for tablets */
@@ -30,9 +36,10 @@
 
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
-    .img-resolution {
+    .mobile-screen {
         height: 40vh; /* Set height to 40% of the viewport */
-        background-image: url("../img/img-mobile-fuji.png"); /* Mobile image */
+        display: block;
+        width: 100%;
     }
     .main-title {
         font-size: 3.25rem !important; /* Smaller font size for mobile */
