@@ -24,25 +24,20 @@
     <header>
         <!-- Navigation bar container -->
         <nav class="navbar">
-
             <!-- Website title that redirects to the homepage when clicked -->
             <div class="navbar-title" onclick="window.location.href='../index.html'">Head.</div>
-
             <!-- List of navigation links for desktop view -->
             <ul class="nav-links-desktop">
                 <li><a href="../pages/works.html">Works</a></li>
                 <li><a href="../pages/services.html">Services</a></li>
                 <li><a href="../pages/contacts.html">Contacts</a></li>
             </ul>
-
             <!-- Mobile menu container -->
             <div class="mobile-menu" id="mobileMenu">
-
                 <!-- Close button for the mobile menu -->
                 <button class="close" id="closeButton">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-
                 <!-- List of navigation links for mobile view -->
                 <ul class="nav-links-mobile">
                     <li><a href="../pages/works.html">Works</a></li>
@@ -50,35 +45,41 @@
                     <li><a href="../pages/contacts.html">Contacts</a></li>
                 </ul>
             </div>
-
             <!-- Button to open the mobile menu (hamburger icon) -->
             <button class="hamburger" id="hamburgerButton">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
     </header>
-
     <main>
+        <!-- Main section for the contact page content -->
         <section class="container contact-page">
-            <h1 class="main-title animate__animated animate__fadeIn">Contact Us </h1>
+            <!-- Main title for the contact page with animation effect -->
+            <h1 class="main-title animate__animated animate__fadeIn">Contact Us</h1>
+            <!-- Container holding contact information details -->
             <div class="contact-container">
                 <div class="contact-info">
+                    <!-- Subheading for customer support section -->
                     <h2 class="animation main-info">Customer Support</h2>
-                    <p class="main-info">Email: <a
-                            href="mailto:support@fictitiouswebsite.com">support@fictitiouswebsite.com</a></p>
+                    <!-- Email contact with a clickable mailto link -->
+                    <p class="main-info">Email:
+                        <a href="mailto:support@fictitiouswebsite.com">support@fictitiouswebsite.com</a>
+                    </p>
+                    <!-- Phone contact information -->
                     <p class="main-info">Phone: +1 (800) 555-1234</p>
+                    <!-- Support hours information -->
                     <p class="main-info">Hours: Monday - Friday, 9 AM - 6 PM (EST)</p>
                 </div>
             </div>
         </section>
+        <!-- Section containing an embedded Google map -->
         <section class="container">
-
+            <!-- Embedded Google Map iframe displaying a location (in this example, Mount Fuji) -->
             <iframe class="map" title="Google Search Result for Example"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6507.598756268496!2d138.7222135499646!3d35.360624890769614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMount%20Fuji!5e0!3m2!1sen!2sse!4v1730109671043!5m2!1sen!2sse"></iframe>
-
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6507.598756268496!2d138.7222135499646!3d35.360624890769614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMount%20Fuji!5e0!3m2!1sen!2sse!4v1730109671043!5m2!1sen!2sse">
+            </iframe>
         </section>
     </main>
-
     <!-- Footer section with copyright and social media links -->
     <footer>
         <div class="footer-content">

@@ -46,18 +46,21 @@ body {
   }
 }
 
+/* Styling for links within the .contact-info section */
 .contact-info a {
-  color: antiquewhite;
-  text-decoration: none;
+  color: antiquewhite; /* Sets link color to antiquewhite */
+  text-decoration: none; /* Removes underline from links */
 }
 
+/* Hover effect for links within the .contact-info section */
 .contact-info a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adds underline when hovering over the link */
 }
 
+/* Styling for the embedded map */
 .map {
-    width: 100%;
-    min-height: 60vh;
-    border: none;
-    filter: grayscale(100%);
+  width: 100%; /* Ensures the map takes up the full width of its container */
+  min-height: 60vh; /* Sets minimum height of the map to 60% of the viewport height */
+  border: none; /* Removes any border from the iframe */
+  filter: grayscale(100%); /* Applies a grayscale filter to the map */
 }
