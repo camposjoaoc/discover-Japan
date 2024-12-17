@@ -3,6 +3,10 @@
 This project is a visually engaging, fully responsive website inspired by the beauty of **Mount Fuji**. 🌄 The site features four main pages: **Home**, **Works**, **Services**, and **Contact**, each designed with a consistent theme that highlights the stunning imagery of Mount Fuji across various screen sizes. 📱💻
 
 ---
+## You can access the project directly here:  
+🔗 [Discover Japan](https://jc-discover-japan.netlify.app/)
+
+---
 
 ## ✨ Features  
 
